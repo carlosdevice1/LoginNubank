@@ -20,7 +20,7 @@
       
      
          <form method="POST">   
-            <div id ='continuar' onclick="clicar"></div>
+            <div id ='continuar' onclick="clicar()"></div>
         <input type="text" name="nome" placeholder="CPF" autofocus >
         <input type="password" name="senha" placeholder="digite sua senha ">
         <input id="botao" type="submit" value="Entrar">
@@ -31,7 +31,8 @@
     </div>
    <script>
    function clicar(){
-
+    var a = window.document.getElementById('clicar')
+    a.innerText =' sem conexão com a rede  '
 
    }
 
